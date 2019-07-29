@@ -12,7 +12,6 @@ typedef struct type
   int (*f)(va_list args);
 } type_t;
 
-
 int (*getTypes(char type))(va_list args);
 
 #endif
