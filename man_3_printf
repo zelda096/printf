@@ -9,6 +9,7 @@ printf - format and print data
 )
 .SH DESCRIPTION
 Print ARGUMENT(s) according to FORMAT, or execute according to OPTION:
+
 .IReturn:
 .PP
 .B %c
@@ -25,25 +26,26 @@ Print ARGUMENT(s) according to FORMAT, or execute according to OPTION:
 .SH EXAMPLES OF USE
 .B Characters
 .PP
-put example of char
+printchar("%c %c %c %c %c", 'h','e','l','l','o');
 .PP
 .I Output:
-put output
+hello
 .PP
 .B Strings
 .PP
-put example of string
+printstr("%s", h);
 .PP
 .I Output:
-put output
+hello
 .PP
 .B Decimal and Integers
 .PP
-put exmaple
-put example
+printf("%d", x);
+printf("%d", y);
+.PP
 .I Output:
-put output
-put output
+38
+39
 .SH SEE ALSO
 .I printf(1) printf(2) printf(3)
 .SH REPORTING BUGS
