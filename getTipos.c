@@ -5,7 +5,7 @@
  * @type: type
  * Return: function or null
  */
-int (*getTypes(char type))
+int (*getTipos(char type))(va_list args)
 {
 	type_t getFunc[] = {
 		{'c', printChar},

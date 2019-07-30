@@ -35,15 +35,18 @@ int _printf(const char *format, ...)
 	i = c = 0;
 	if (format == NULL)
 		return (-1);
-	while (format[i] != '/0')
+	while (format[i] != '\0')
 	{
-		if (format[i] == '%' && format[i + 1] == '/0')
+		if (format[i] == '%' && format[i + 1] == '\0')
+		{
+			_putchar(format[i]);
 			return (-1);
-		if (format[i] == '%' && checkChar(format[i + 1]) == '/0'
+		}
+		if (format[i] == '%' && checkChar(format[i + 1]) != 0)
 		{
 			i++;
 			if (checkChar(format[i]) == 1)
-				c += (*getTypes(format[i]))(args);
+				c += (*getTipos(format[i]))(args);
 			else
 			{
 				_putchar(format[i]);
@@ -51,11 +54,12 @@ int _printf(const char *format, ...)
 			}
 			i++;
 		}
-			else
-			{
-				_putchar(format[i]);
-				c++;
-			}
+		else
+		{
+			_putchar(format[i]);
+			c++;
+			i++;
+		}
 	}
 	va_end(args);
 	return (c);
