@@ -32,12 +32,12 @@ int _printf(const char *format, ...)
 	va_list args;
 
 	va_start(args, format);
-	i = c = length = 0;
+	i = c = 0;
 	if (format == NULL)
 		return (-1);
 	while (format[i] != '/0')
 	{
-		if (format[i] == '%' && format[i + 1] == '/0')y
+		if (format[i] == '%' && format[i + 1] == '/0')
 			return (-1);
 		if (format[i] == '%' && checkChar(format[i + 1]) == '/0'
 		{
