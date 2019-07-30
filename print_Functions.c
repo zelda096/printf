@@ -32,7 +32,6 @@ int printStr(va_list args)
 		return (i);
 	}
 	else
-		i = 0;
 		while (str[i] != '/0')
 		{
 			_putchar(str[i]);
