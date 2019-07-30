@@ -1,8 +1,7 @@
 #include "holberton.h"
-
 /**
- * printChar - 
- * @args: %c argument
+ * printChar - function that print a char
+ * @args: argument to print
  * Return: 1
  */
 int printChar(va_list args)
@@ -12,9 +11,9 @@ int printChar(va_list args)
 }
 
 /**
- * printStr - Print a character
- * @args: %s argument
- * Return: length of string
+ * printStr - Print a string
+ * @args: argument to print
+ * Return: i
  */
 int printStr(va_list args)
 {
