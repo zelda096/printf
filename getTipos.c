@@ -10,6 +10,7 @@ int (*getTipos(char type))(va_list args)
 	type_t getFunc[] = {
 		{'c', printChar},
 		{'s', printStr},
+		
 		{'\0', NULL}
 	};
 	int i = 0;
