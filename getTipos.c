@@ -1,15 +1,15 @@
 #include "holberton.h"
-
 /**
- * getTipos - compare specifiers with types
+ * getTypes - compare specifiers with types
  * @type: type
  * Return: function or null
  */
-int (*getTypes(char type))
+int (*getTipos(char type))(va_list args)
 {
 	type_t getFunc[] = {
 		{'c', printChar},
 		{'s', printStr},
+		
 		{'\0', NULL}
 	};
 	int i = 0;

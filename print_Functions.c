@@ -1,8 +1,7 @@
 #include "holberton.h"
-
 /**
- * printChar - 
- * @args: %c argument
+ * printChar - function that print a char
+ * @args: argument to print
  * Return: 1
  */
 int printChar(va_list args)
@@ -12,9 +11,9 @@ int printChar(va_list args)
 }
 
 /**
- * printStr - Print a character
- * @args: %s argument
- * Return: length of string
+ * printStr - Print a string
+ * @args: argument to print
+ * Return: i
  */
 int printStr(va_list args)
 {
@@ -24,16 +23,18 @@ int printStr(va_list args)
 	if (str == NULL)
 	{
 		str = "(null)";
+		for (i = 0; i < 7; i++)
+		{
+			_putchar(str[i]);
+			i++;
+		}
+		return (i);
+	}
+	else
 		while (str[i] != '\0')
 		{
 			_putchar(str[i]);
 			i++;
 		}
-		return (6);
-	}
-	for (i = 0; str[i]; i++)
-	{
-		_putchar(str[i]);
-	}
 	return (i);
 }

@@ -1,8 +1,7 @@
 #include "holberton.h"
-
 /**
- * checkSpec - 
- * @spc: 
+ * checkChar - identify the specific char
+ * @_char: the arguments in the format
  * Return: -1 for %, 1 for specifier, 0 for n/a
  */
 int checkChar(char _char)
@@ -22,28 +21,31 @@ int checkChar(char _char)
 }
 
 /**
- * _printf - 
- * @format: 
+ * _printf - entry point
+ * @format: the elements in the main
  * Return: length of printed string
  */
 int _printf(const char *format, ...)
 {
-	int i, c, length;
+	int i, c;
 	va_list args;
 
 	va_start(args, format);
-	i = c = length = 0;
+	i = c = 0;
 	if (format == NULL)
 		return (-1);
-	while (format[i] != '/0')
+	while (format[i] != '\0')
 	{
-		if (format[i] == '%' && format[i + 1] == '/0')y
+		if (format[i] == '%' && format[i + 1] == '\0')
+		{
+			_putchar(format[i]);
 			return (-1);
-		if (format[i] == '%' && checkChar(format[i + 1]) == '/0'
+		}
+		if (format[i] == '%' && checkChar(format[i + 1]) != 0)
 		{
 			i++;
 			if (checkChar(format[i]) == 1)
-				c += (*getTypes(format[i]))(args);
+				c += (*getTipos(format[i]))(args);
 			else
 			{
 				_putchar(format[i]);
@@ -51,12 +53,13 @@ int _printf(const char *format, ...)
 			}
 			i++;
 		}
-			else
-			{
-				_putchar(format[i]);
-				c++;
-			}
+		else
+		{
+			_putchar(format[i]);
+			c++;
+			i++;
+		}
 	}
 	va_end(args);
-	return (counter);
+	return (c);
 }
