@@ -1,7 +1,6 @@
 #include "holberton.h"
-
 /**
- * getTipos - compare specifiers with types
+ * getTypes - compare specifiers with types
  * @type: type
  * Return: function or null
  */

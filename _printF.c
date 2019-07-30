@@ -1,8 +1,7 @@
 #include "holberton.h"
-
 /**
- * checkSpec - 
- * @spc: 
+ * checkChar - identify the specific char
+ * @_char: the arguments in the format
  * Return: -1 for %, 1 for specifier, 0 for n/a
  */
 int checkChar(char _char)
@@ -22,8 +21,8 @@ int checkChar(char _char)
 }
 
 /**
- * _printf - 
- * @format: 
+ * _printf - entry point
+ * @format: the elements in the main
  * Return: length of printed string
  */
 int _printf(const char *format, ...)
