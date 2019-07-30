@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * getTypes - compare specifiers with types
+ * getTipos - compare specifiers with types
  * @type: type
  * Return: function or null
  */
@@ -9,7 +9,7 @@ int (*getTipos(char type))(va_list args)
 	type_t getFunc[] = {
 		{'c', printChar},
 		{'s', printStr},
-		
+
 		{'\0', NULL}
 	};
 	int i = 0;

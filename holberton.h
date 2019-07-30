@@ -4,7 +4,11 @@
 #include <stdlib.h>
 #include <limits.h>
 #include <stdio.h>
-
+/**
+ * struct type - structure for all printf
+ * @type: type to print
+ * @f: pointer to function
+ */
 typedef struct type
 {
 	char type;
