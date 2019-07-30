@@ -24,17 +24,11 @@ int printStr(va_list args)
 	{
 		str = "(null)";
 		for (i = 0; i < 7; i++)
-		{
 			_putchar(str[i]);
-			i++;
-		}
 		return (i);
 	}
 	else
 		while (str[i] != '\0')
-		{
-			_putchar(str[i]);
-			i++;
-		}
+			_putchar(str[i++]);
 	return (i);
 }
