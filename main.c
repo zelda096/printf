@@ -40,5 +40,25 @@ int main(void)
   printf("Len:[%d]\n", len2);
   _printf("Unknown:[%r]\n");
   printf("Unknown:[%r]\n");
+
+  printf("START OF TEST\n");
+  
+  //b
+  printf("=====================\n");
+  printf("*****BINARY*****\n");
+  printf("=====================\n");
+  int b = 4312;
+  int alen, elen;
+  printf("Expected   : %i\n", 1111011);
+  _printf("Actual     : %b\n", 123);
+  elen = printf("Expected   : %lu\n", 1000011011000);
+  alen = _printf("Actual     : %b\n", b);
+  printf("Expected   : %i\n", elen);
+  _printf("Actual     : %i\n", alen);
+  printf("Expected   : %i\n", 0);
+  _printf("Actual     : %b\n", 0);
+
+
+
   return (0);
 }

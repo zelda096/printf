@@ -28,7 +28,7 @@ int checkChar(char _char)
  */
 int _printf(const char *format, ...)
 {
-	int i, c, length;
+	int i, c;
 	va_list args;
 
 	va_start(args, format);
@@ -58,5 +58,5 @@ int _printf(const char *format, ...)
 			}
 	}
 	va_end(args);
-	return (counter);
+	return (c);
 }
