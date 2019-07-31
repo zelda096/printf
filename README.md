@@ -1,3 +1,5 @@
+<img src="https://lh4.googleusercontent.com/yUzaviDgzDIq4-ZHp9k0YU5fsz0nOdekNRt1qHgp7Qdlw5BNfe6bETEf5ZWd-Vkn_m57BPx7HcDrwFK41ptLnQLTNipWmTAtiQwZL_8s97Nkzn94xP7XVKb3RnV0fx8QEZoxlkVd">
+
 •• Printf
 
 In C programming language, printf() function is used to print the “character, string, float, integer, octal and hexadecimal values” onto the output screen.
