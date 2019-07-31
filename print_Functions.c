@@ -32,3 +32,38 @@ int printStr(va_list args)
 			_putchar(str[i++]);
 	return (i);
 }
+
+/**
+ *
+ */
+
+int printDec (va_list parameters){
+	int n, c, size;
+	unsigned int n2;
+
+	n =  size = 0;
+	c = 1;
+	n = va_arg(parameters, int);
+	if (n < 0)
+	{
+		n = n * -1;
+		_putchar('-');
+	}
+	n2 = n;
+	while (n2 > 9)
+	{
+		n2 = n2 / 10;
+		c = c * 10;
+	}
+	while (c >= 1)
+	{
+		size++;
+		_putchar(((n / c) % 10) + '0');
+		c = c / 10;
+	}
+	return (size);
+}
+
+int printInt (va_list parameters){
+	return (printDec(parameters));
+}

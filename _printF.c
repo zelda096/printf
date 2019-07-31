@@ -6,12 +6,12 @@
  */
 int checkChar(char _char)
 {
-	char lt[] = {'s', 'c'};
+	char lt[] = {'s', 'c', 'd', 'i'};
 	int i = 0;
 
 	if (_char == '%')
 		return (-1);
-	while (i < 2)
+	while (i < 4)
 	{
 		if (_char == lt[i])
 			return (1);

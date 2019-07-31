@@ -21,5 +21,7 @@ int checkChar(char _char);
 int printChar(va_list args);
 int printStr(va_list args);
 int _printf(const char *format, ...);
+int printInt(va_list parameters);
+int printDec(va_list parameters);
 
 #endif
