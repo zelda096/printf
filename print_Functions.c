@@ -50,6 +50,7 @@ int printDec(va_list parameters)
 	{
 		n = n * -1;
 		_putchar('-');
+		size++;
 	}
 	abs = n;
 	n2 = n;
