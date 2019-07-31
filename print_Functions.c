@@ -41,16 +41,18 @@ int printStr(va_list args)
 int printDec(va_list parameters)
 {
 	int n, c, size;
-	unsigned int n2;
+	unsigned int n2, abs;
 
 	n =  size = 0;
 	c = 1;
 	n = va_arg(parameters, int);
+	abs = n;
 	if (n < 0)
 	{
-		n = n * -1;
+		abs = abs * -1;
 		_putchar('-');
 	}
+
 	n2 = n;
 	while (n2 > 9)
 	{
@@ -60,7 +62,7 @@ int printDec(va_list parameters)
 	while (c >= 1)
 	{
 		size++;
-		_putchar(((n / c) % 10) + '0');
+		_putchar(((abs / c) % 10) + '0');
 		c = c / 10;
 	}
 	return (size);
