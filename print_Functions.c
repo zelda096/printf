@@ -46,13 +46,12 @@ int printDec(va_list parameters)
 	n =  size = 0;
 	c = 1;
 	n = va_arg(parameters, int);
-	abs = n;
 	if (n < 0)
 	{
-		abs = abs * -1;
+		n = n * -1;
 		_putchar('-');
 	}
-
+	abs = n;
 	n2 = n;
 	while (n2 > 9)
 	{
