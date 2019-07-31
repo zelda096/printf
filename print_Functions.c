@@ -34,10 +34,12 @@ int printStr(va_list args)
 }
 
 /**
- *
+ * printDec - print number in decimal
+ * @parameters: parameters to print
+ * Return: size
  */
-
-int printDec (va_list parameters){
+int printDec(va_list parameters)
+{
 	int n, c, size;
 	unsigned int n2;
 
@@ -63,7 +65,12 @@ int printDec (va_list parameters){
 	}
 	return (size);
 }
-
-int printInt (va_list parameters){
+/**
+ * printInt - print number in integer
+ * @parameters: parameters to print
+ * Return: printDec
+ */
+int printInt(va_list parameters)
+{
 	return (printDec(parameters));
 }
