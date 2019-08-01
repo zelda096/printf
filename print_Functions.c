@@ -34,12 +34,14 @@ int printStr(va_list args)
 }
 
 /**
- *
+ * printDec - print number in decimal
+ * @parameters: parameters to print
+ * Return: size
  */
-
-int printDec (va_list parameters){
+int printDec(va_list parameters)
+{
 	int n, c, size;
-	unsigned int n2;
+	unsigned int n2, abs;
 
 	n =  size = 0;
 	c = 1;
@@ -48,7 +50,9 @@ int printDec (va_list parameters){
 	{
 		n = n * -1;
 		_putchar('-');
+		size++;
 	}
+	abs = n;
 	n2 = n;
 	while (n2 > 9)
 	{
@@ -58,12 +62,17 @@ int printDec (va_list parameters){
 	while (c >= 1)
 	{
 		size++;
-		_putchar(((n / c) % 10) + '0');
+		_putchar(((abs / c) % 10) + '0');
 		c = c / 10;
 	}
 	return (size);
 }
-
-int printInt (va_list parameters){
+/**
+ * printInt - print number in integer
+ * @parameters: parameters to print
+ * Return: printDec
+ */
+int printInt(va_list parameters)
+{
 	return (printDec(parameters));
 }
