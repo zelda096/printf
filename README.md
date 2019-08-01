@@ -1,4 +1,6 @@
-<img src="https://www.computerhope.com/cdn/linux/printf.gif">
+<center>
+	<img src="https://www.computerhope.com/cdn/linux/printf.gif">
+</center>
 
 •• Printf
 
@@ -7,24 +9,29 @@ We use printf() function with %d format specifier to display the value of an int
 Similarly %c is used to display character, %f for float variable, %s for string variable, %lffor double and %x for hexadecimal variable.
 To generate a newline,we use “\n” in C printf() statement.
 
-printchar("%c %c %c %c %c", 'h','e','l','l','o');
-.PP
-.I Output:
+•Char:
+
+printChar("%c %c %c %c %c", 'h','e','l','l','o');
+
+•Output:
+
 hello
-.PP
-.B Strings
-.PP
+
+•Strings
+
 printstr("%s", h);
-.PP
-.I Output:
+
+•Output:
+
 hello
-.PP
-.B Decimal and Integers
-.PP
-printf("%d", x);
-printf("%d", y);
-.PP
-.I Output:
+
+•Decimal and Integers
+
+printDec("%d", x);
+
+printInt("%d", y);
+
+•Output:
 38
 39
 _______________________________________________________________________________________________________________________________________________________________________________________________
