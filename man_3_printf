@@ -8,7 +8,7 @@ printf - format and print data
 .I [ARGUMENT]...
 )
 .SH DESCRIPTION
-Print ARGUMENT(s) according to FORMAT, or execute according to OPTION:
+In C programming language, printf() function is used to print the “character, string, float, integer, octal and hexadecimal values” onto the output screen. We use printf() function with %d format specifier to display the value of an integer variable. Similarly %c is used to display character, %f for float variable, %s for string variable, %lffor double and %x for hexadecimal variable. To generate a newline,we use “\n” in C printf() statement.
 
 .IReturn:
 .PP

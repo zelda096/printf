@@ -7,6 +7,28 @@ We use printf() function with %d format specifier to display the value of an int
 Similarly %c is used to display character, %f for float variable, %s for string variable, %lffor double and %x for hexadecimal variable.
 To generate a newline,we use “\n” in C printf() statement.
 
+printchar("%c %c %c %c %c", 'h','e','l','l','o');
+.PP
+.I Output:
+hello
+.PP
+.B Strings
+.PP
+printstr("%s", h);
+.PP
+.I Output:
+hello
+.PP
+.B Decimal and Integers
+.PP
+printf("%d", x);
+printf("%d", y);
+.PP
+.I Output:
+38
+39
+_______________________________________________________________________________________________________________________________________________________________________________________________
+
 Tasks
 
 0. I'm not going anywhere. You can print that wherever you want to. I'm here and I'm a Spur for life mandatory
