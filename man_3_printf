@@ -1,4 +1,4 @@
-.TH _PRINTF 2 "29 July 2019" "0.6" "Holberton Printf"
+.TH _PRINTF 3 "29 July 2019" "0.6" "Holberton Printf"
 .SH NAME
 printf - format and print data
 .SH SYNOPSIS
@@ -7,6 +7,9 @@ printf - format and print data
 ,
 .I [ARGUMENT]...
 )
+.SH HEADER
+#include "holberton.h"
+
 .SH DESCRIPTION
 In C programming language, printf() function is used to print the “character, string, float, integer, octal and hexadecimal values” onto the output screen. We use printf() function with %d format specifier to display the value of an integer variable. Similarly %c is used to display character, %f for float variable, %s for string variable, %lffor double and %x for hexadecimal variable. To generate a newline,we use “\n” in C printf() statement.
 
@@ -26,22 +29,22 @@ In C programming language, printf() function is used to print the “character, 
 .SH EXAMPLES OF USE
 .B Characters
 .PP
-printchar("%c %c %c %c %c", 'h','e','l','l','o');
+printChar("%c %c %c %c %c", 'h','e','l','l','o');
 .PP
 .I Output:
 hello
 .PP
 .B Strings
 .PP
-printstr("%s", h);
+printStr("%s", h);
 .PP
 .I Output:
 hello
 .PP
 .B Decimal and Integers
 .PP
-printf("%d", x);
-printf("%d", y);
+printInt("%d", x);
+printInt("%d", y);
 .PP
 .I Output:
 38
